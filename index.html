@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The ultimate ski adventure</title>
+    <link href="reset.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css"> 
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<div class="container">
+<div class="form">
+  <h1 class="form-title">Register for the ultimate ski adventure</h1>
+  <h2 class="form-info">Your basic info</h2>
+  <form class="form-input" action="/action_page.php">
+    <div class="input">
+    <label for="name">Name and surname*</label><br>
+ <input  type="text" id="name" name="name" placeholder="Name and surname" required>
+      </div>
+    <div class="input e-mail-input">
+      <div>
+   <label for="e-mail">E-Mail*</label><br>
+  <input type="email" id="e-mail" name="e-mail" placeholder="example@mail.com"required>
+        </div>
+      <div>
+     <label for="password">Password*</label><br>
+     <input  type="password" id="password" name="password" placeholder="****"required>
+        </div>
+    </div>
+    <p class="necessary">this field is required</p>
+    <div class="age">
+  <p>Age</p>
+  <label class="age-container" for="under">Under 18
+  <input type="radio" id="under" name="age" value="Under 18"required>
+  <span class="age-btn"></span>
+  </label><br>
+  <label class="age-container" for="over">18 and over
+    <input type="radio" id="over" name="age" value="18 and over"required>
+    <span class="age-btn"></span>
+  </label>
+ </div>
+  <div class="biography">
+  <h2>Tell us about yourself</h2>
+  <label for="biography-input">Your biography</label><br>
+  <textarea name="biography" id="biography-input"required></textarea>
+  </div>
+  <div class="location">
+  <label for="location-input">Select location:</label><br>
+  <select class="location-select" name="location" id="location-input" required>
+    <option value="">--</option>
+    <option value="Mayrhofen">Mayrhofen</option>
+    <option value="Zillertal">Zillertal</option>
+    <option value="Saalbach">Saalbach</option>
+    <option value="Obertilliach">Obertilliach</option>
+  </select>
+</div>
+<div class="equipment-container">
+  <p>What equipment would you like to rent?</p>
+  <label class="equipment-label" for="equipment1"> Skis
+<input type="checkbox" id="equipment1" name="equipment" value="Skis">
+  <span class="equipment-btn"></span></label><br>
+  <label class="equipment-label" for="equipment2"> Helmet
+  <input type="checkbox" id="equipment2" name="equipment" value="Helmet">
+  <span class="equipment-btn"></span></label><br>
+  <label class="equipment-label" for="equipment3"> Goggles
+  <input type="checkbox" id="equipment3" name="equipment" value="Goggles">
+  <span class="equipment-btn"></span></label><br>
+  <label class="equipment-label" for="equipment4"> Ski boots
+      <input type="checkbox" id="equipment4" name="equipment" value="Ski boots">
+  <span class="equipment-btn"></span></label><br>
+  <label class="equipment-label" for="equipment5"> Ski poles
+      <input type="checkbox" id="equipment5" name="equipment" value="Ski poles">
+  <span class="equipment-btn"></span></label><br>
+</div>
+    <div class="btn-container">
+<input class="reset-btn" type="reset"  value="Reset">
+  <input class="submit-btn" type="submit"  value="Submit">
+      </div>
+  </form>
+</div>
+  <div class="image">
+    <img class="ski-image image-1"></img>
+    <h1 class="image-text">Epic experience in the snow</h1>
+     </div>
+</div>    
+  </body>
+</html>
