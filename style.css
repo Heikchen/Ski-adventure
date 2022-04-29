@@ -1,0 +1,279 @@
+:root{
+    --primary-gray-color: #E2E5ED;
+    --primary-white-color: #FFFF;
+    --primary-red-color: #DD310C;
+    --secondary-violet-color: #3E416D;
+    --secondary-green-color: #149770;
+    --secondary-gray-color: #979797;
+  }
+  h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+  }
+  h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  p,a{
+     font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  .container{
+    max-width:1440px;
+    margin: auto;
+    display:grid;
+    grid-template-columns:3fr 2fr;
+    grid-auto-rows: auto;
+    column-gap:20px;
+    grid-template-areas: 
+      "form image"
+  }
+  .form{
+    grid-area: form;    
+    margin: 110px auto 110px 90px;
+  }
+  .form-title{
+    margin-bottom: 69px;
+  }
+  .form-info{
+  margin-bottom:24px;
+  }
+  .input{
+    font-family: 'Nunito', sans-serif;
+    }
+  #name{
+    width: 612px;
+    height: 51px;
+    border: 3px solid var(--primary-white-color);
+    border-radius: 8px;
+    outline: 1px solid var(--secondary-violet-color);
+    background: var(--primary-gray-color);
+    margin-top: 16px;
+    margin-bottom: 31px;
+    padding-left:8px;
+    font-family: 'Nunito', sans-serif;
+  }
+  .e-mail-input{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  #e-mail, #password{
+    width:300px;
+    height:51px;
+    border:none;
+    border-radius:8px;
+    font-family: 'Nunito', sans-serif;
+    background: var(--primary-gray-color);
+    margin-top:16px;
+    margin-bottom:16px;
+  }
+  .necessary{
+    font-size: 12px;
+    color: var(--primary-red-color);
+    margin-bottom: 16px;
+  }
+  .age{
+    margin-bottom:55px;
+  }
+  .age-container{
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+  }
+  input[name=age] {
+    visibility: hidden;
+  }
+  .age-btn{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 16px;
+    background-color: var(--primary-gray-color);
+  }
+  .age-container input:checked ~ .age-btn {
+    background-color: var(--secondary-violet-color);
+  }
+  .biography{
+    margin-bottom:38px;
+    font-family: 'Nunito', sans-serif;
+  }
+  #biography-input{
+    background: var(--primary-gray-color);
+    border: none;
+    border-radius: 8px;
+    height: 105px;
+    width: 620px;
+    margin-top: 16px;
+  }
+  .location{
+    margin-bottom: 33px;
+    font-family: 'Nunito', sans-serif;
+  }
+  #location-input{
+    background: var(--primary-gray-color);
+    border: none;
+    border-radius: 8px;
+    font-family: 'Nunito', sans-serif;
+    width: 620px;
+    height:51px;
+    margin-top: 16px;
+    padding-left:16px;
+    color: var(--secondary-gray-color);
+  }
+  .equipment-container{
+    margin-bottom: 37px;
+     font-family: 'Nunito', sans-serif;}
+  
+  .equipment-label{
+    display:block;
+    position:relative;
+    padding-left: 30px;
+    height: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    }
+  input[name=equipment] {
+    visibility: hidden;
+  }
+  .equipment-btn{
+    position:absolute;
+    top:3px;
+    left:0;
+    width:16px;
+    height:16px;
+    background: var(--primary-gray-color);
+  }
+  .equipment-container input:checked ~ .equipment-btn{
+    background: var(--secondary-violet-color);
+  }
+  .btn-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: 'Nunito', sans-serif;
+    }
+  .reset-btn{
+    width: 300px;
+    height:51px;
+    background: var(--priamry-white-color);
+    border-radius:8px;
+    border: 1px solid;
+    font-size:22px;
+    font-weight: 500;
+  }
+  .submit-btn{
+    width: 300px;
+    height:51px;
+    background: var(--secondary-green-color);
+    border-radius:8px;
+    border:none;
+    color: var(--primary-white-color);
+    font-size:22px;
+    font-weight: 500;
+  }
+  .image{
+  grid-area: image;
+  position:relative;
+  justify-self: end;
+    margin-right: 90px;
+  }
+  .ski-image{
+    height:1452px;
+    width:600px;
+  }
+  .image-1{
+    background: url('assets/ski.jpeg');
+    background-position:88% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+  .image-text{
+    position: absolute;
+      left: 111px;
+      top: 202px;
+      color: var(--primary-white-color);
+      font-size: 45px;
+      width: 338px;
+      text-shadow: 0px 4px 4px var(--secondary-gray-color);
+  }
+  @media screen and (min-width:900px) and (max-width:1355px){
+    .ski-image{
+      width:375px;
+    }
+    .image-text{
+      width: 150px;
+      left: 50px;
+    }
+  }
+  @media screen and (min-width:900px) and (max-width:1233px){
+    #name{
+    width: 292px;
+    }
+  #biography-input,#location-input{
+      width:300px;
+    }
+  }
+  @media screen and (min-width:746px) and (max-width:900px){
+  .container{
+    grid-template-columns:1fr;
+  }
+    .form{
+      margin-top:110px;
+      margin-bottom:110px;
+    }
+  .ski-image, .image-text{
+  display:none;
+    }
+    }
+  @media screen and (max-width:746px){
+    .container{
+    grid-template-columns:1fr;
+    justify-items: center;
+      align-items: center;
+  }
+    .form{
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+       margin-top:110px;
+      margin-bottom:110px;
+    }
+  .form-input{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    .form-title{
+     text-align:center;
+    }
+    .e-mail-input, .btn{
+      justify-content:center;
+    }
+    .necessary{
+    margin-right: 196px;
+    }
+    .age {
+    margin-right: 160px;
+    }
+    .ski-image, .image-text{
+  display:none;
+    }
+    #name{
+    width: 292px;
+    }
+  #biography-input,#location-input{
+      width:300px;
+    }
+  }
